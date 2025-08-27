@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Finder 🍸 - Vanilla JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍸 Cocktail Finder</h1>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="e.g., Margarita, Mojito, Gin...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="actions-container">
+                <button id="random-btn" class="action-button">🎲 Random Drink</button>
+                <button id="favorites-btn" class="action-button">⭐ Show Favorites</button>
+            </div>
+        </header>
+
+        <main id="results-container">
+            <div id="results-grid" class="results-grid">
+                <p class="placeholder">Type something in the search box to find cocktails!</p>
+            </div>
+        </main>
+
+        <section id="details-container" class="hidden"></section>
+
+        <section id="favorites-container" class="hidden">
+            <h2>⭐ My Favorite Drinks</h2>
+            <div id="favorites-grid" class="results-grid"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
